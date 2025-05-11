@@ -1,0 +1,117 @@
+/* Resets margin, padding, and sets a base font for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding/border don't increase width/height */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+}
+
+/* Full-screen background with gradient, center-aligned content */
+body {
+    background: linear-gradient(to right, #74ebd5, #ACB6E5); /* Blue gradient background */
+    min-height: 100vh; /* Full viewport height */
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically centers content */
+    justify-content: center; /* Horizontally centers content */
+}
+
+/* Main container for weather card */
+.card {
+    background: radial-gradient(123deg,#3498db,#333); White background
+    padding: 2rem; /* Padding around inner content */
+    border-radius: 1.5rem; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 400px; /* Ensures card doesn't get too wide */
+    text-align: center; /* Center-aligns all inner text */
+}
+
+/* Container for search input and button */
+.search {
+    display: flex; /* Places input and button side by side */
+    justify-content: center; /* Centers them horizontally */
+    margin-bottom: 1.5rem; /* Space below search box */
+}
+
+/* Search input styling */
+.search input {
+    padding: 0.75rem 1rem; /* Comfortable typing area */
+    width: 70%; /* Takes up 70% of the row */
+    border: none; /* No border */
+    border-radius: 1.5rem 0 0 1.5rem; /* Rounded left edges only */
+    outline: none; /* Removes default focus outline */
+    font-size: 1rem; /* Readable text size */
+    background-color: #f0f0f0; /* Light grey background */
+}
+
+/* Search button styling */
+.search button {
+    padding: 0.75rem; /* Matches input height */
+    border: none;
+    background-color: #3498db; /* Blue background */
+    border-radius: 0 1.5rem 1.5rem 0; /* Rounded right edges only */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Smooth color transition */
+}
+
+/* Search button image size */
+.search button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Hover effect for search button */
+.search button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Weather info container (icon, temperature, city name) */
+.weather {
+    margin-top: 1rem; /* Space above weather section */
+}
+
+/* Weather condition icon (sun, rain, etc.) */
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+/* Current temperature styling */
+.temp {
+    font-size: 2.5rem; /* Large font size */
+    font-weight: bold; /* Bold text */
+    margin: 0.5rem 0; /* Vertical spacing */
+}
+
+/* City name styling */
+.city {
+    font-size: 1.5rem;
+    color: #555; /* Slightly faded black for readability */
+}
+
+/* Container for humidity and wind columns */
+.details {
+    display: flex; /* Aligns columns side by side */
+    justify-content: space-between; /* Spaces them apart */
+    margin-top: 2rem;
+}
+
+/* Individual column (humidity or wind) */
+.col {
+    display: flex; /* Align icon and text side by side */
+    align-items: center; /* Vertically centers content */
+    gap: 0.5rem; /* Space between icon and text */
+}
+
+/* Icon inside column */
+.col img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Text inside column (humidity/wind info) */
+.col p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
